@@ -181,3 +181,4 @@ When showcasing MailGuard AI to professors, reviewers, or team members:
    * Navigate to **Model Performance**.
    * Show the **Side-by-Side Comparison Table** and the **2x2 Confusion Matrices**.
    * Explain why Logistic Regression was selected over Naive Bayes: Logistic Regression reduced False Negatives down to **1.39%** compared to **6.56%** in Naive Bayes, preventing dangerous spam from slipping into the inbox.
+
