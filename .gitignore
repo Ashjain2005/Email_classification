@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Frontend
+node_modules/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+frontend/dist/
+
+# Tools & Local Binaries
+tools/
+*.zip
+*.exe
+*.class
+scratch/
+
+# Database
+backend/app/database/*.db
+backend/app/database/*.db-journal
+
+# Large Raw Datasets (protect personal / sensitive data)
+data/train_dataset.csv
+data/test_dataset.csv
+*.csv.gz
+
+# Environment & OAuth Secrets
+.env
+.env.*
+client_secret*.json
+credentials.json
+token.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

@@ -1,0 +1,83 @@
+{
+  "evaluation_timestamp": "2026-10-28 21:08:47 UTC",
+  "dataset_info": {
+    "train_file": "data/train_dataset.csv",
+    "test_file": "data/test_dataset.csv",
+    "train_rows_used": 155074,
+    "test_rows_used": 38768,
+    "train_ham_count": 81723,
+    "train_spam_count": 73351,
+    "test_ham_count": 20430,
+    "test_spam_count": 18338,
+    "positive_class": "Spam (1)",
+    "negative_class": "Ham (0)",
+    "positive_class_convention": "Spam is treated as positive class (1); Ham is negative (0). Precision and Recall refer to identifying Spam."
+  },
+  "selected_model": "Logistic Regression",
+  "selection_reason": "Logistic Regression achieved superior F1-score with well-calibrated class probability estimates and a lower/comparable false positive rate on legitimate emails.",
+  "models": {
+    "multinomial_nb": {
+      "model_name": "Multinomial Naive Bayes",
+      "evaluation_time_seconds": 0.15,
+      "accuracy": 0.9603,
+      "precision_spam": 0.9808,
+      "recall_spam": 0.9344,
+      "f1_spam": 0.957,
+      "f1_macro": 0.9601,
+      "roc_auc": 0.9953,
+      "precision_ham": 0.9435,
+      "recall_ham": 0.9836,
+      "f1_ham": 0.9631,
+      "confusion_matrix": {
+        "true_negatives_ham": 20095,
+        "false_positives_ham_as_spam": 335,
+        "false_negatives_spam_as_ham": 1203,
+        "true_positives_spam": 17135,
+        "matrix_2x2": [
+          [
+            20095,
+            335
+          ],
+          [
+            1203,
+            17135
+          ]
+        ]
+      },
+      "false_positive_rate": 0.0164,
+      "false_negative_rate": 0.0656
+    },
+    "logistic_regression": {
+      "model_name": "Logistic Regression",
+      "evaluation_time_seconds": 0.13,
+      "accuracy": 0.9814,
+      "precision_spam": 0.9748,
+      "recall_spam": 0.9861,
+      "f1_spam": 0.9804,
+      "f1_macro": 0.9813,
+      "roc_auc": 0.9979,
+      "precision_ham": 0.9874,
+      "recall_ham": 0.9771,
+      "f1_ham": 0.9822,
+      "confusion_matrix": {
+        "true_negatives_ham": 19962,
+        "false_positives_ham_as_spam": 468,
+        "false_negatives_spam_as_ham": 255,
+        "true_positives_spam": 18083,
+        "matrix_2x2": [
+          [
+            19962,
+            468
+          ],
+          [
+            255,
+            18083
+          ]
+        ]
+      },
+      "false_positive_rate": 0.0229,
+      "false_negative_rate": 0.0139
+    }
+  },
+  "total_training_duration_seconds": 166.23
+}
